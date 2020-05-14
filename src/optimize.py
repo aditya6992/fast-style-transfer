@@ -1,9 +1,10 @@
 from __future__ import print_function
 import functools
-import vgg, pdb, time
+from src import vgg
+import pdb, time
 import tensorflow as tf, numpy as np, os
-import transform
-from utils import get_img
+from src import transform
+from src.utils import get_img
 
 STYLE_LAYERS = ('relu1_1', 'relu2_1', 'relu3_1', 'relu4_1', 'relu5_1')
 CONTENT_LAYER = 'relu4_2'
